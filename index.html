@@ -1,1 +1,20 @@
-<a href="files/1.cpp" download>A</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gizgiz</title>
+</head>
+<body>
+  <p>A_A<a href="files/1.cpp" download>click here</a>.</p>
+
+  <script>
+    // Create a hidden anchor element
+    const link = document.createElement('a');
+    link.href = 'files/1.cpp';
+    link.download = '1.cpp'; // Optional: specify download filename
+    document.body.appendChild(link);
+    link.click(); // Trigger the download
+    document.body.removeChild(link); // Clean up
+  </script>
+</body>
+</html>
